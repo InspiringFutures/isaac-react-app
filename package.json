@@ -144,8 +144,10 @@
     "build-stats-phy": "webpack --env prod --config config/webpack.config.physics.js --profile --json > bundle-stats-phy.json",
     "analyse-bundle-phy": "webpack-bundle-analyzer bundle-stats-phy.json build-physics",
     "build-stats-cs": "webpack --env prod --config config/webpack.config.cs.js --profile --json > bundle-stats-cs.json",
-    "analyse-bundle-cs": "webpack-bundle-analyzer bundle-stats-cs.json build-cs"
+    "analyse-bundle-cs": "webpack-bundle-analyzer bundle-stats-cs.json build-cs",
+    "prepare": "webpack --env prod --config config/webpack.config.components.js"
   },
+  "main": "build-components/isaac-components.js",
   "eslintConfig": {
     "extends": [
       "react-app",
